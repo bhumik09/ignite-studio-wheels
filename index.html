@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IGNITE STUDIO WHEELS — Cinematic Supercars for Creators & Track Enthusiasts</title>
+  
+  <!-- SEO & Social Sharing -->
+  <meta name="description" content="Rent Lamborghinis, Porsches and American Muscle for YouTube shoots, reels, music videos and track days. 4-Hour Creator Passes & on-set delivery." />
+  <meta name="theme-color" content="#07090E" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Cyber Cyan Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cyberCyan: '#00F0FF',
+            electricBlue: '#0077FE',
+            darkObsidian: '#07090E',
+            cardBg: '#0D1321',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-[#07090E] text-slate-100 min-h-screen relative selection:bg-[#00F0FF] selection:text-black">
+
+  <!-- Ambient Cyber Glows -->
+  <div class="glow-orb-cyan top-10 -left-48"></div>
+  <div class="glow-orb-blue top-[40rem] -right-48"></div>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR
+       ========================================================================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#00F0FF] via-[#0077FE] to-cyan-200 flex items-center justify-center text-black font-black text-xl shadow-lg shadow-[#00F0FF]/30 group-hover:scale-105 transition-transform">
+          🔥
+        </div>
+        <div>
+          <span class="font-heading font-black text-2xl tracking-wider text-white">IGNITE<span class="text-[#00F0FF]">.</span></span>
+          <span class="block text-[10px] tracking-widest text-[#00F0FF] font-bold uppercase -mt-1">Studio Wheels</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+        <a href="#fleet" class="hover:text-[#00F0FF] transition-colors">The Garage</a>
+        <a href="#viral-reels" class="hover:text-[#00F0FF] transition-colors">Viral Shoots</a>
+        <a href="#creator-program" class="hover:text-[#00F0FF] transition-colors">Tag & Save 15%</a>
+        <a href="#packages" class="hover:text-[#00F0FF] transition-colors">Shoot Passes</a>
+        <a href="#faq" class="hover:text-[#00F0FF] transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="hidden sm:flex items-center gap-4">
+        <a 
+          href="https://wa.me/919045206782?text=Hi%20IGNITE%20Studio%20Wheels!%20I%20want%20to%20book%20a%20supercar%20for%20my%20upcoming%20shoot." 
+          target="_blank" 
+          class="bg-[#00F0FF] text-black font-extrabold text-sm px-6 py-2.5 rounded-full cyan-glow-hover flex items-center gap-2"
+        >
+          <span>Chat on WhatsApp</span>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.173.45 1.056 1.341 1.849.658.585 1.213.766 1.386.853.173.087.275.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white p-2">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0D1321] border-b border-cyan-500/20 px-4 py-4 space-y-3">
+      <a href="#fleet" class="block text-gray-200 hover:text-[#00F0FF]">The Garage</a>
+      <a href="#viral-reels" class="block text-gray-200 hover:text-[#00F0FF]">Viral Shoots</a>
+      <a href="#creator-program" class="block text-gray-200 hover:text-[#00F0FF]">Tag & Save 15%</a>
+      <a href="#packages" class="block text-gray-200 hover:text-[#00F0FF]">Shoot Passes</a>
+      <a href="#faq" class="block text-gray-200 hover:text-[#00F0FF]">FAQ</a>
+      <a href="https://wa.me/919045206782" class="block text-center bg-[#00F0FF] text-black font-bold py-2.5 rounded-xl mt-2">Book on WhatsApp</a>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. HERO SECTION
+       ========================================================================= -->
+  <section class="relative pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden bg-grid-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      
+      <!-- Creator Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-cyan-400/30 text-[#00F0FF] text-xs md:text-sm font-semibold mb-8 backdrop-blur-md shadow-lg shadow-cyan-500/10">
+        <span class="w-2 h-2 rounded-full bg-[#00F0FF] animate-ping"></span>
+        <span>India's Dedicated Supercar Studio for Digital Creators & YouTubers</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white max-w-5xl mx-auto leading-tight md:leading-[1.1]">
+        Shoot Cinematic. Go Viral. <br />
+        <span class="text-gradient-cyan">Drive With IGNITE.</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="mt-6 text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-normal">
+        Rent Lamborghinis, Porsches, and American V8s by the hour. Specifically calibrated for camera rigs, acoustic sound recording, drone chasing, and instant set delivery across NCR.
+      </p>
+
+      <!-- CTA Row -->
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a 
+          href="#fleet" 
+          class="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#00F0FF] text-black font-extrabold text-base cyan-glow-hover flex items-center justify-center gap-2 shadow-xl shadow-cyan-400/20"
+        >
+          <span>Explore Creator Garage</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <a 
+          href="#creator-program" 
+          class="w-full sm:w-auto px-8 py-4 rounded-xl glass-panel text-white font-semibold text-base hover:bg-white/10 transition-colors flex items-center justify-center gap-2 border border-cyan-500/30 text-[#00F0FF]"
+        >
+          <span>Claim 15% Creator Subsidy</span>
+        </a>
+      </div>
+
+      <!-- Live Counters -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+        <div class="glass-panel p-4 rounded-xl text-center border border-white/10">
+          <div class="font-heading text-2xl md:text-3xl font-extrabold text-[#00F0FF]">50+</div>
+          <div class="text-xs text-gray-400 mt-1">Supercars in Garage</div>
+        </div>
+        <div class="glass-panel p-4 rounded-xl text-center border border-white/10">
+          <div class="font-heading text-2xl md:text-3xl font-extrabold text-white">2.9s</div>
+          <div class="text-xs text-gray-400 mt-1">Top Acceleration</div>
+        </div>
+        <div class="glass-panel p-4 rounded-xl text-center border border-white/10">
+          <div class="font-heading text-2xl md:text-3xl font-extrabold text-[#00F0FF]">12M+</div>
+          <div class="text-xs text-gray-400 mt-1">Total Reel Views Generated</div>
+        </div>
+        <div class="glass-panel p-4 rounded-xl text-center border border-white/10">
+          <div class="font-heading text-2xl md:text-3xl font-extrabold text-emerald-400">4.9 ★</div>
+          <div class="text-xs text-gray-400 mt-1">Production Rating</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. VIRAL REELS SHOWCASE ("SHOT ON IGNITE") - UNIQUE TO THIS PROJECT
+       ========================================================================= -->
+  <section id="viral-reels" class="py-20 relative bg-[#090D15] border-t border-cyan-500/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#00F0FF]">Proof of Virality</span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-1">
+            Shot On IGNITE Machines
+          </h2>
+          <p class="text-gray-400 text-sm mt-2 max-w-lg">
+            See how creators used our fleet to crack the algorithm and rack up millions of views.
+          </p>
+        </div>
+        <div class="text-xs font-semibold text-gray-400 bg-white/5 px-4 py-2 rounded-lg border border-white/10 w-fit">
+          ⚡ 100% Camera-Mount Approved Fleet
+        </div>
+      </div>
+
+      <!-- Reel Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Reel 1 -->
+        <div class="glass-panel rounded-2xl overflow-hidden border border-white/10 group relative reel-card">
+          <div class="relative h-80 bg-slate-900 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=700&q=80" 
+              alt="Huracan Night Reel" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#07090E] via-black/40 to-transparent"></div>
+            
+            <div class="absolute top-4 left-4 bg-red-600/90 text-white font-extrabold text-xs px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
+              <span>🔥 4.2M Views</span>
+            </div>
+
+            <div class="absolute bottom-4 left-4 right-4">
+              <span class="text-xs text-[#00F0FF] font-semibold">@aarav.vlogs • Night Cinematic</span>
+              <h4 class="font-heading text-lg font-bold text-white mt-0.5">Lamborghini Huracán Evo V10 Symphony</h4>
+              <p class="text-xs text-gray-400 mt-1">Location: Noida Film City Studio 4</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reel 2 -->
+        <div class="glass-panel rounded-2xl overflow-hidden border border-white/10 group relative reel-card">
+          <div class="relative h-80 bg-slate-900 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=700&q=80" 
+              alt="Porsche Track Reel" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#07090E] via-black/40 to-transparent"></div>
+            
+            <div class="absolute top-4 left-4 bg-[#0077FE] text-white font-extrabold text-xs px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
+              <span>🏁 2.8M Views</span>
+            </div>
+
+            <div class="absolute bottom-4 left-4 right-4">
+              <span class="text-xs text-[#00F0FF] font-semibold">@supercarsindia • Track POV</span>
+              <h4 class="font-heading text-lg font-bold text-white mt-0.5">Porsche 911 GT3 RS 9000 RPM Pulls</h4>
+              <p class="text-xs text-gray-400 mt-1">Location: Buddh International Circuit</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reel 3 -->
+        <div class="glass-panel rounded-2xl overflow-hidden border border-white/10 group relative reel-card">
+          <div class="relative h-80 bg-slate-900 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?auto=format&fit=crop&w=700&q=80" 
+              alt="Mustang Drift Reel" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#07090E] via-black/40 to-transparent"></div>
+            
+            <div class="absolute top-4 left-4 bg-emerald-600 text-white font-extrabold text-xs px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
+              <span>🚀 1.9M Views</span>
+            </div>
+
+            <div class="absolute bottom-4 left-4 right-4">
+              <span class="text-xs text-[#00F0FF] font-semibold">@driftdiaries • Gym Lifestyle B-Roll</span>
+              <h4 class="font-heading text-lg font-bold text-white mt-0.5">Mustang GT V8 Cold Start Rumble</h4>
+              <p class="text-xs text-gray-400 mt-1">Location: Aerocity Runway Stretch</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. FLEET CATALOG & SEARCH SECTION
+       ========================================================================= -->
+  <section id="fleet" class="py-20 relative bg-[#07090E] border-t border-cyan-500/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#00F0FF]">IGNITE Hangar</span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-1">
+            Select Your Production Machine
+          </h2>
+          <p class="text-gray-400 text-sm mt-2 max-w-lg">
+            Delivered fully fueled, professionally detailed, and ready for camera rolling in under 60 minutes.
+          </p>
+        </div>
+
+        <!-- Search Input -->
+        <div class="w-full md:w-80">
+          <div class="relative">
+            <input 
+              type="text" 
+              id="search-input"
+              placeholder="Search by car name or engine..."
+              class="w-full bg-[#0D1321] border border-cyan-500/20 rounded-xl px-4 py-2.5 pl-10 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#00F0FF] transition-colors shadow-inner"
+            />
+            <svg class="w-4 h-4 text-cyan-400 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex flex-wrap gap-2.5 mb-10">
+        <button class="filter-btn active px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#0D1321] border border-white/10 text-gray-300 hover:text-white" data-filter="all">
+          All Garage
+        </button>
+        <button class="filter-btn px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#0D1321] border border-white/10 text-gray-300 hover:text-white" data-filter="supercar">
+          Supercars (V10)
+        </button>
+        <button class="filter-btn px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#0D1321] border border-white/10 text-gray-300 hover:text-white" data-filter="track">
+          Track Weapons
+        </button>
+        <button class="filter-btn px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#0D1321] border border-white/10 text-gray-300 hover:text-white" data-filter="muscle">
+          American Muscle
+        </button>
+        <button class="filter-btn px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#0D1321] border border-white/10 text-gray-300 hover:text-white" data-filter="spyder">
+          Open-Top Spyders
+        </button>
+        <button class="filter-btn px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#0D1321] border border-white/10 text-gray-300 hover:text-white" data-filter="suv">
+          VIP SUVs
+        </button>
+      </div>
+
+      <!-- Dynamic Fleet Grid (app.js) -->
+      <div id="fleet-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Rendered via JavaScript -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. CREATOR "TAG & SAVE 15%" PROGRAM - UNIQUE TO THIS PROJECT
+       ========================================================================= -->
+  <section id="creator-program" class="py-20 relative bg-[#090D15] border-t border-cyan-500/10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="glass-panel p-8 sm:p-12 rounded-3xl border-2 border-cyan-400/30 relative overflow-hidden shadow-2xl shadow-cyan-500/10">
+        <div class="absolute -right-16 -top-16 w-64 h-64 bg-[#00F0FF]/15 rounded-full filter blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-widest text-[#00F0FF] bg-cyan-950/70 border border-cyan-400/30 px-3 py-1 rounded-full">
+              Creator Partner Program
+            </span>
+            <h3 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-4">
+              Tag @ignite.wheels & Get <span class="text-gradient-cyan">Flat 15% Subsidy</span>
+            </h3>
+            <p class="text-gray-300 text-sm mt-3 max-w-xl leading-relaxed">
+              Are you an Instagram Creator, YouTuber, or Artist? Tag IGNITE in your final published reel or video description, and we instantly discount 15% off your shoot invoice.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-4 text-xs text-gray-400">
+              <span class="flex items-center gap-1.5"><span class="text-[#00F0FF]">✓</span> No follower minimum</span>
+              <span class="flex items-center gap-1.5"><span class="text-[#00F0FF]">✓</span> Valid on all 4-Hour Passes</span>
+              <span class="flex items-center gap-1.5"><span class="text-[#00F0FF]">✓</span> Instant invoice deduction</span>
+            </div>
+          </div>
+
+          <div class="w-full md:w-auto shrink-0">
+            <a 
+              href="#fleet" 
+              class="block w-full text-center px-8 py-4 rounded-xl bg-[#00F0FF] text-black font-extrabold text-sm cyan-glow-hover shadow-lg shadow-cyan-400/20"
+            >
+              Choose Car & Apply Code
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. SHOOT PACKAGES
+       ========================================================================= -->
+  <section id="packages" class="py-20 relative bg-[#07090E] border-t border-cyan-500/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#00F0FF]">Production Passes</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-1">
+          Engineered For Your Shoot Schedule
+        </h2>
+        <p class="text-gray-400 text-sm mt-2">
+          Transparent pricing without hidden studio surcharges.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Package 1 -->
+        <div class="glass-panel p-8 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold tracking-wider uppercase text-gray-400">Reels & TikTok Sprint</span>
+            <h3 class="font-heading text-2xl font-bold text-white mt-1">4-Hour Shoot Pass</h3>
+            <div class="my-6">
+              <span class="text-4xl font-extrabold text-white">Starts ₹11,999</span>
+              <span class="text-xs text-gray-400 block mt-1">Perfect for 3-5 high-converting reels</span>
+            </div>
+            <ul class="space-y-3 text-sm text-gray-300">
+              <li class="flex items-center gap-2">✓ 40 km shoot range included</li>
+              <li class="flex items-center gap-2">✓ Suction rigs & gimbal allowed</li>
+              <li class="flex items-center gap-2">✓ Free fuel for 40 km</li>
+              <li class="flex items-center gap-2">✓ Delivery to your studio door</li>
+            </ul>
+          </div>
+          <a href="#fleet" class="mt-8 block text-center bg-white/10 hover:bg-white/20 text-white font-semibold py-3 rounded-xl transition duration-200">
+            Select Machine
+          </a>
+        </div>
+
+        <!-- Package 2 (Featured) -->
+        <div class="glass-panel p-8 rounded-2xl border-2 border-[#00F0FF] relative flex flex-col justify-between shadow-xl shadow-cyan-400/10">
+          <span class="absolute -top-3.5 right-6 bg-[#00F0FF] text-black font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider">
+            Creator Favorite
+          </span>
+          <div>
+            <span class="text-xs font-bold tracking-wider uppercase text-[#00F0FF]">Day Vlog & Trackday</span>
+            <h3 class="font-heading text-2xl font-bold text-white mt-1">24-Hour Experience</h3>
+            <div class="my-6">
+              <span class="text-4xl font-extrabold text-white">Starts ₹34,999</span>
+              <span class="text-xs text-gray-400 block mt-1">Full 24 Hours Self-Drive Freedom</span>
+            </div>
+            <ul class="space-y-3 text-sm text-gray-300">
+              <li class="flex items-center gap-2 text-[#00F0FF]">✓ 200 km highway driving included</li>
+              <li class="flex items-center gap-2 text-[#00F0FF]">✓ Zero speed governors</li>
+              <li class="flex items-center gap-2 text-[#00F0FF]">✓ 100% Comprehensive insurance</li>
+              <li class="flex items-center gap-2 text-[#00F0FF]">✓ 24/7 Precision track assistance</li>
+            </ul>
+          </div>
+          <a href="#fleet" class="mt-8 block text-center bg-[#00F0FF] hover:bg-[#00d5e3] text-black font-extrabold py-3 rounded-xl transition duration-200 shadow-lg shadow-cyan-400/25">
+            Book 24h Pass
+          </a>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="glass-panel p-8 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold tracking-wider uppercase text-gray-400">Commercial Production</span>
+            <h3 class="font-heading text-2xl font-bold text-white mt-1">Music Video & Brand</h3>
+            <div class="my-6">
+              <span class="text-4xl font-extrabold text-white">Custom Quotes</span>
+              <span class="text-xs text-gray-400 block mt-1">Multi-car convoys with stunt pilots</span>
+            </div>
+            <ul class="space-y-3 text-sm text-gray-300">
+              <li class="flex items-center gap-2">✓ Multi-car convoys + G-Wagon chase</li>
+              <li class="flex items-center gap-2">✓ Precision stunt drivers provided</li>
+              <li class="flex items-center gap-2">✓ Multi-day discounted contracts</li>
+              <li class="flex items-center gap-2">✓ On-set production coordinator</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/919045206782?text=Hi%20IGNITE!%20I%20need%20a%20custom%20production%20quote%20for%20a%20music%20video." target="_blank" class="mt-8 block text-center bg-white/10 hover:bg-white/20 text-white font-semibold py-3 rounded-xl transition duration-200">
+            Talk to Concierge
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. FAQ SECTION
+       ========================================================================= -->
+  <section id="faq" class="py-20 relative bg-[#090D15] border-t border-cyan-500/10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#00F0FF]">Got Questions?</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-1">
+          Creator FAQ
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <details class="glass-panel p-6 rounded-xl border border-white/10 cursor-pointer group">
+          <summary class="font-semibold text-white list-none flex justify-between items-center text-base">
+            <span>Can we use suction camera rigs and rolling shot mounts?</span>
+            <span class="text-[#00F0FF] group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-sm text-gray-400 mt-3 leading-relaxed">
+            Yes! All our machines have paint-protection film (PPF) installed. Rubber suction mounts (Tilta, DJI, GoPro) and rolling shot camera car setups are 100% permitted.
+          </p>
+        </details>
+
+        <details class="glass-panel p-6 rounded-xl border border-white/10 cursor-pointer group">
+          <summary class="font-semibold text-white list-none flex justify-between items-center text-base">
+            <span>How does the 15% "Tag & Save" Creator Subsidy work?</span>
+            <span class="text-[#00F0FF] group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-sm text-gray-400 mt-3 leading-relaxed">
+            Simply check the "Tag & Save 15%" box in our calculator and provide your Instagram or YouTube handle. When you post your reel/video, tag @ignite.wheels. The 15% discount is applied immediately to your booking invoice!
+          </p>
+        </details>
+
+        <details class="glass-panel p-6 rounded-xl border border-white/10 cursor-pointer group">
+          <summary class="font-semibold text-white list-none flex justify-between items-center text-base">
+            <span>What documents are required for booking?</span>
+            <span class="text-[#00F0FF] group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-sm text-gray-400 mt-3 leading-relaxed">
+            Valid Original Driving License (min. 2 years old for self-drive) and Government Photo ID (Aadhaar or Passport). Verification is completed digitally within 15 minutes.
+          </p>
+        </details>
+
+        <details class="glass-panel p-6 rounded-xl border border-white/10 cursor-pointer group">
+          <summary class="font-semibold text-white list-none flex justify-between items-center text-base">
+            <span>Which shoot locations and hubs do you cover?</span>
+            <span class="text-[#00F0FF] group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-sm text-gray-400 mt-3 leading-relaxed">
+            We deliver on flatbeds directly to Noida Film City, Aerocity Delhi, Buddh International Circuit (BIC), Yamuna Expressway, Gurgaon Cyber City, and private film studios.
+          </p>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. INTERACTIVE CALCULATOR & MODAL
+       ========================================================================= -->
+  <div id="booking-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="glass-panel bg-[#0B101C] border border-cyan-400/30 w-full max-w-lg rounded-2xl overflow-hidden shadow-2xl relative">
+      
+      <!-- Close Button -->
+      <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-white/10 rounded-full w-8 h-8 flex items-center justify-center">
+        ✕
+      </button>
+
+      <!-- Modal Header -->
+      <div class="p-6 border-b border-white/10 flex items-center gap-4">
+        <img id="modal-car-image" src="" alt="Selected Car" class="w-20 h-14 object-cover rounded-lg border border-cyan-400/30" />
+        <div>
+          <span class="text-[10px] uppercase font-bold text-[#00F0FF] tracking-wider">IGNITE Production Estimator</span>
+          <h3 id="modal-car-title" class="font-heading text-lg font-bold text-white">Car Name</h3>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="p-6 space-y-4">
+        
+        <!-- Plan -->
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Select Shoot Plan</label>
+          <select id="modal-plan-select" class="w-full bg-[#07090E] border border-cyan-500/20 rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none focus:border-[#00F0FF]">
+            <option value="shoot4">4-Hour Creator Shoot Pass</option>
+            <option value="day24">24-Hour Day Rental (Self-Drive)</option>
+          </select>
+        </div>
+
+        <!-- Location Hub -->
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Shoot Location / Hub</label>
+          <select id="modal-location-select" class="w-full bg-[#07090E] border border-cyan-500/20 rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none focus:border-[#00F0FF]">
+            <option value="Noida Film City (Studio Set)">Noida Film City (Studio Sets)</option>
+            <option value="Aerocity Highway & Runway">Delhi Aerocity Runway & Highway</option>
+            <option value="Buddh International Circuit (BIC)">Buddh International Circuit (BIC Track)</option>
+            <option value="Yamuna Expressway Scenic">Yamuna Expressway High-Speed Stretch</option>
+            <option value="Gurgaon Cyber City Skyline">Gurgaon Cyber City Skyline</option>
+          </select>
+        </div>
+
+        <!-- Add-ons -->
+        <div class="pt-1">
+          <label class="block text-xs font-semibold text-gray-400 mb-2">Production Add-Ons</label>
+          <div class="space-y-2">
+            <label class="flex items-center justify-between p-2.5 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-300 cursor-pointer hover:bg-white/10">
+              <span class="flex items-center gap-2">
+                <input type="checkbox" id="addon-gopro" class="rounded accent-[#00F0FF]" />
+                <span>GoPro Hero 12 + Triple Suction Rig</span>
+              </span>
+              <span class="text-[#00F0FF] font-semibold">+₹1,500</span>
+            </label>
+
+            <label class="flex items-center justify-between p-2.5 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-300 cursor-pointer hover:bg-white/10">
+              <span class="flex items-center gap-2">
+                <input type="checkbox" id="addon-pilot" class="rounded accent-[#00F0FF]" />
+                <span>Certified Precision Stunt Driver (Rolling Shots)</span>
+              </span>
+              <span class="text-[#00F0FF] font-semibold">+₹3,000</span>
+            </label>
+
+            <label class="flex items-center justify-between p-2.5 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-300 cursor-pointer hover:bg-white/10">
+              <span class="flex items-center gap-2">
+                <input type="checkbox" id="addon-lights" class="rounded accent-[#00F0FF]" />
+                <span>RGB Tube Lights + Smoke Machine Kit</span>
+              </span>
+              <span class="text-[#00F0FF] font-semibold">+₹1,000</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- "Tag & Save" 15% Discount Checkbox -->
+        <div class="p-3 rounded-xl bg-cyan-950/40 border border-cyan-400/30">
+          <label class="flex items-center justify-between text-xs text-cyan-300 font-semibold cursor-pointer">
+            <span class="flex items-center gap-2">
+              <input type="checkbox" id="addon-creator-discount" class="rounded accent-[#00F0FF]" />
+              <span>I will tag @ignite.wheels in my reel/video</span>
+            </span>
+            <span class="bg-[#00F0FF] text-black text-[10px] font-black px-2 py-0.5 rounded">15% OFF</span>
+          </label>
+          <div class="mt-2.5">
+            <input 
+              type="text" 
+              id="creator-handle-input" 
+              placeholder="Your Instagram or YouTube Handle (e.g. @myhandle)"
+              class="w-full bg-[#07090E] border border-cyan-500/30 rounded-lg px-3 py-1.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-[#00F0FF]"
+            />
+          </div>
+        </div>
+
+        <!-- Total Price Banner -->
+        <div class="p-4 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between mt-2">
+          <div>
+            <div id="discount-badge-row" class="hidden text-[10px] text-cyan-400 font-bold mb-0.5">
+              🎉 15% Creator Subsidy Applied!
+            </div>
+            <span class="text-xs text-gray-400 block">Final Estimated Total</span>
+            <span id="modal-total-estimate" class="text-2xl font-black text-[#00F0FF]">₹0</span>
+          </div>
+          <span class="text-[10px] text-gray-400 text-right">Fuel & Doorstep<br />Delivery Included.</span>
+        </div>
+
+      </div>
+
+      <!-- Action -->
+      <div class="p-6 pt-0">
+        <a 
+          id="modal-whatsapp-btn" 
+          href="#" 
+          target="_blank" 
+          class="w-full bg-[#00F0FF] hover:bg-[#00d5e3] text-black font-extrabold text-sm py-3.5 rounded-xl transition duration-200 flex items-center justify-center gap-2 shadow-lg shadow-cyan-400/25"
+        >
+          <span>Confirm on WhatsApp (Instant Availability)</span>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.173.45 1.056 1.341 1.849.658.585 1.213.766 1.386.853.173.087.275.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       9. FOOTER
+       ========================================================================= -->
+  <footer class="bg-[#05070B] border-t border-cyan-500/10 py-12 text-xs text-gray-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div>
+        <span class="font-heading font-black text-lg text-white">IGNITE<span class="text-[#00F0FF]">.</span></span>
+        <p class="mt-1 text-gray-500">Cinematic Supercars & Machines for Digital Creators.</p>
+      </div>
+
+      <div class="flex items-center gap-6 text-gray-400">
+        <a href="#fleet" class="hover:text-white transition-colors">The Garage</a>
+        <a href="#viral-reels" class="hover:text-white transition-colors">Viral Shoots</a>
+        <a href="#packages" class="hover:text-white transition-colors">Shoot Passes</a>
+        <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+        <a href="https://wa.me/919045206782" class="hover:text-[#00F0FF] transition-colors">WhatsApp Concierge</a>
+      </div>
+
+      <div>
+        &copy; 2026 IGNITE STUDIO WHEELS. All rights reserved.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script File -->
+  <script src="app.js"></script>
+
+</body>
+</html>
